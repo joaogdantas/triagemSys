@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS treatments(
+    id UUID PRIMARY KEY,
+    protocol VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by UUID NOT NULL,
+    priority VARCHAR(50),
+    patient_id UUID NOT NULL,
+    type VARCHAR(50),
+    arrival VARCHAR(50),
+    ward_number VARCHAR(50),
+    bed VARCHAR(50),
+    admission TIMESTAMP,
+    discharge TIMESTAMP,
+    blood_pressure VARCHAR(20),
+    heart_rate VARCHAR(20),
+    respiratory_rate VARCHAR(20),
+    temperature INTEGER,
+    oxygen_saturation INTEGER,
+    blood_sugar INTEGER,
+    chief_complaint VARCHAR(512),
+    FOREIGN KEY (patient_id) REFERENCES patients(id)
+);

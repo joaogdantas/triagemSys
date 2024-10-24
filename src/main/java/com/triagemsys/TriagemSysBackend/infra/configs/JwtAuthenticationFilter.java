@@ -1,6 +1,6 @@
 package com.triagemsys.TriagemSysBackend.infra.configs;
 
-import com.triagemsys.TriagemSysBackend.domain.service.security.JwtService;
+import com.triagemsys.TriagemSysBackend.autenticacao.domain.service.security.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

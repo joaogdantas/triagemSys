@@ -1,6 +1,6 @@
 package com.triagemsys.TriagemSysBackend.infra.configs;
 
-import com.triagemsys.TriagemSysBackend.domain.repository.UserRepository;
+import com.triagemsys.TriagemSysBackend.autenticacao.domain.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
